@@ -1,0 +1,47 @@
+[code=html,html 代码,true]<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>遮罩效果</title>
+</head>
+<style type="text/css">
+    *{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+    body{
+        background-color: black;
+    }
+    div{
+        text-align: center;
+        position: absolute;
+        top: 200px;
+        left: 550px;
+        width: 800px;
+        height: 400px;
+        background-image: url(http://cdn.attach.w3cfuns.com/notes/pics/201606/12/171035tid9paltiq9aiayy.jpg);
+        background-repeat: repeat-x;
+        background-position: 0 0;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-animation: cliptext 20s linear infinite;
+    }
+    @-webkit-keyframes cliptext{
+        from { background-position: 0 0; } 
+        to { background-position: 100% 0; }
+    }
+    span{
+        font-family: '微软雅黑';
+        font-size: 200px;
+        font-weight: 500;
+    }
+</style>
+<body>
+    <div>
+        <span>
+            蓝天白云
+        </span>
+    </div>
+</body>
+</html>
